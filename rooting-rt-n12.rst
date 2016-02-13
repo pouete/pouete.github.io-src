@@ -2,6 +2,7 @@ Rooting le rt-n12
 #################
 :date: 2016-02-04
 :category: Reverse
+:tags: Hardware, Reverse, Bus pirate, Routeur, Asus
 :slug: reverse-rt-n12
 
 

@@ -2,7 +2,8 @@ Comprendre le MS08-067
 ######################
 :date: 2016-02-05 15:59
 :slug: comprendre-le-ms08-067
-:status: published
+:category: Reverse
+:status: draft
 
 Introduction :
 ~~~~~~~~~~~~~~
@@ -79,7 +80,10 @@ analyser le comportement de l'exploit.
   wmiprvse.exe                1212 N/A
 
 
-Nous nous intéresserons aux services réseaux. Ici c'est le PID 996 ( 0x3E4 )
+Nous nous intéresserons aux services réseaux. Ici c'est le PID 996 ( 0x3E4 ).
+On lance OllyDbg pour s'attacher au processus n*3E4.
+Il faut ensuite afficher les modules executables ( alt-e ) et trouver "NETAPI32.DLL" puis "view names" ( ctrl-n ).
+Enfin, il faudra trouver la fonction NetpwPathCanonicalize().
 
 
 .. _`wcscat`: https://msdn.microsoft.com/en-us/library/h1x0y282.aspx
